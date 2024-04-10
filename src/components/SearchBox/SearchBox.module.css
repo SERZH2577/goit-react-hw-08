@@ -1,0 +1,21 @@
+.searchNameContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 250px;
+  margin-bottom: 30px;
+}
+
+.label {
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.searchInput {
+  box-sizing: border-box;
+  width: 250px;
+  height: 35px;
+  padding: 5px;
+  border: 1px solid;
+  border-radius: 6px;
+  outline: none;
+}

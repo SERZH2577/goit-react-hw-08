@@ -1,0 +1,16 @@
+#root {
+  max-width: 1280px;
+}
+
+.section {
+  padding: 50px;
+}
+
+.title {
+  font-size: 30px;
+  margin: 0 0 10px 0;
+}
+
+.error {
+  color: #ff0000;
+}
