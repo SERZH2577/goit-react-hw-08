@@ -8,7 +8,7 @@ import Loader from "../../components/Loader/Loader";
 import Error from "../../components/Error/Error";
 import css from "./Contacts.module.css";
 
-export default function App() {
+export default function ContactsPage() {
   const dispatch = useDispatch();
   const loading = useSelector((state) => state.contacts.loading);
   const error = useSelector((state) => state.contacts.error);
