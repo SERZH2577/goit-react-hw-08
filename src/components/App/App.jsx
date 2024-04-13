@@ -33,8 +33,6 @@ export default function App() {
   return (
     <>
       <div>
-        {/* <Navigation />
-        return ( */}
         <Layout>
           {isRefreshing ? (
             <Loader />

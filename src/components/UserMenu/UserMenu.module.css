@@ -5,18 +5,18 @@
   justify-content: center;
 }
 
-.text {
-  color: #fff;
-}
+/* .text {
+  color: #000000;
+} */
 
-.button {
+.btn {
   width: auto;
   height: 30px;
   box-sizing: border-box;
-  border-radius: 4px;
-  border: 1px solid #000;
-  display: flex;
+  /* border-radius: 4px; */
+  /* border: 1px solid #000; */
+  /* display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
+  background-color: #fff; */
 }
