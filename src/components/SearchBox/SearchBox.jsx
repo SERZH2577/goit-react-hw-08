@@ -1,6 +1,7 @@
 import { nanoid } from "nanoid";
 import { useDispatch, useSelector } from "react-redux";
-import { setFilter, selectFilters } from "../../redux/filtersSlice";
+import { setFilter } from "../../redux/filters/slice";
+import { selectFilters } from "../../redux/filters/selectors";
 import css from "./SearchBox.module.css";
 
 export default function SearchBox() {
