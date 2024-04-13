@@ -1,0 +1,21 @@
+.navigate {
+  display: flex;
+  justify-content: space-between;
+}
+.listLink {
+  display: flex;
+  gap: 12px;
+}
+.link {
+  padding: 8px 16px;
+  border: 1px solid rgb(8, 216, 8);
+  border-radius: 8px;
+  color: rgb(8, 216, 8);
+  font-size: 20px;
+  text-decoration: none;
+}
+.link:hover {
+  text-shadow: 0 5px 10px rgb(15, 14, 14);
+  transform: scale(1.1);
+  transition: all 250ms ease-in;
+}

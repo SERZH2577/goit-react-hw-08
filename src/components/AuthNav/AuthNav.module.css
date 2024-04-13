@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  gap: 10px;
+}
+
+/* .link {
+  color: #fff;
+  font-size: var(--font-medium);
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  transition-property: color, background-color, transform;
+  transition-duration: 0.2s;
+  transition-timing-function: var(--animation-cubicBezier);
+
+  transform: scale(0.9);
+} */
+
+.link {
+  padding: 8px 16px;
+  border: 1px solid rgb(8, 216, 8);
+  border-radius: 8px;
+  color: rgb(8, 216, 8);
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-shadow: 0 5px 10px rgb(15, 14, 14);
+  transform: scale(1.1);
+  transition: all 250ms ease-in;
+}
+
+.active {
+  color: red;
+  background-color: #ff00cc;
+
+  /* transform: scale(1);
+  pointer-events: none; */
+}
