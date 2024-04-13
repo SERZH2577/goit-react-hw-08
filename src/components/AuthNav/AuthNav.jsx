@@ -6,14 +6,18 @@ export default function AuthNav() {
   return (
     <div className={css.container}>
       <NavLink
-        className={({ isActive }) => clsx(css.link, isActive && css.active)}
+        className={({ isActive }) =>
+          clsx(css.navItem, isActive && css.isActive)
+        }
         to="/register"
       >
         Register
       </NavLink>
 
       <NavLink
-        className={({ isActive }) => clsx(css.link, isActive && css.active)}
+        className={({ isActive }) =>
+          clsx(css.navItem, isActive && css.isActive)
+        }
         to="/login"
       >
         LogIn

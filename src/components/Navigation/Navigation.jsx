@@ -8,10 +8,12 @@ export default function Navigation() {
   const isLoggedIn = useSelector(selectIsLoggedIn);
 
   return (
-    <header className={css.head}>
-      <nav className={css.listLink}>
+    <section className={css.navigation}>
+      <nav className={css.nav}>
         <NavLink
-          className={({ isActive }) => clsx(css.link, isActive && css.active)}
+          className={({ isActive }) =>
+            clsx(css.navItem, isActive && css.isActive)
+          }
           to="/"
         >
           Home
@@ -19,13 +21,15 @@ export default function Navigation() {
 
         {isLoggedIn && (
           <NavLink
-            className={({ isActive }) => clsx(css.link, isActive && css.active)}
+            className={({ isActive }) =>
+              clsx(css.navItem, isActive && css.isActive)
+            }
             to="/contacts"
           >
             Contacts
           </NavLink>
         )}
       </nav>
-    </header>
+    </section>
   );
 }

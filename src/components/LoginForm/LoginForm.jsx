@@ -43,14 +43,14 @@ export default function LoginForm() {
       validationSchema={validationSchema}
     >
       <Form className={css.form}>
-        <div>
+        <div className={css.inputContainer}>
           <label className={css.label} htmlFor={emailId}>
             Email
           </label>
           <Field type="email" className={css.input} name="email" id={emailId} />
           <ErrorMessage className={css.error} name="email" component="span" />
         </div>
-        <div>
+        <div className={css.inputContainer}>
           <label className={css.label} htmlFor={passwordId}>
             Password
           </label>
@@ -66,7 +66,7 @@ export default function LoginForm() {
             component="span"
           />
         </div>
-        <button className={css.button} type="submit">
+        <button className={css.btn} type="submit">
           Login
         </button>
       </Form>

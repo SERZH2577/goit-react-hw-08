@@ -2,22 +2,19 @@ import css from "./RegistrationForm.module.css";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { useId } from "react";
 import { useDispatch } from "react-redux";
-import * as yup from "yup";
+import * as Yup from "yup";
 import { register } from "../../redux/auth/operations";
 
-const validationSchema = yup.object().shape({
-  name: yup
-    .string()
+const validationSchema = Yup.object().shape({
+  name: Yup.string()
     .min(3, "Too Short!")
     .max(50, "Too Long!")
     .required("Required"),
-  email: yup
-    .string()
+  email: Yup.string()
     .min(3, "Too Short!")
     .max(50, "Too Long!")
     .required("Required"),
-  password: yup
-    .string()
+  password: Yup.string()
     .min(3, "Too Short!")
     .max(50, "Too Long!")
     .required("Required"),
@@ -45,21 +42,21 @@ export default function RegistrationForm() {
       validationSchema={validationSchema}
     >
       <Form className={css.form}>
-        <div>
+        <div className={css.inputContainer}>
           <label className={css.label} htmlFor={nameId}>
             Name
           </label>
           <Field className={css.input} name="name" id={nameId} />
           <ErrorMessage className={css.error} name="name" component="span" />
         </div>
-        <div>
+        <div className={css.inputContainer}>
           <label className={css.label} htmlFor={emailId}>
             Email
           </label>
           <Field type="email" className={css.input} name="email" id={emailId} />
           <ErrorMessage className={css.error} name="email" component="span" />
         </div>
-        <div>
+        <div className={css.inputContainer}>
           <label className={css.label} htmlFor={passwordId}>
             Password
           </label>
@@ -75,7 +72,7 @@ export default function RegistrationForm() {
             component="span"
           />
         </div>
-        <button className={css.button} type="submit">
+        <button className={css.btn} type="submit">
           SignUp
         </button>
       </Form>

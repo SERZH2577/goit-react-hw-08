@@ -6,7 +6,7 @@ import css from "./HomePage.module.css";
 export default function Home() {
   const isLoggedIn = useSelector(selectIsLoggedIn);
   return (
-    <div className={css.mainBlock}>
+    <div>
       <p className={css.text}>
         Hello, this is the phone book. Here you can save your contacts.
       </p>
