@@ -7,9 +7,7 @@ export default function Home() {
   const isLoggedIn = useSelector(selectIsLoggedIn);
   return (
     <div className={css.container}>
-      <p className={css.text}>
-        Hello, this is the phone book. Here you can save your contacts.
-      </p>
+      <p className={css.text}>Hello. Here you can save your contacts.</p>
       {!isLoggedIn && (
         <p className={css.textLast}>
           If you want to see a your phone numbers, please to{" "}
